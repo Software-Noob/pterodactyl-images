@@ -17,6 +17,6 @@ ENV  USER=container HOME=/home/container
 WORKDIR /home/container
 
 COPY ./entrypoint.sh /entrypoint.sh
-ADD update_check.sh ./update_check.sh
+ADD update_checker.sh ./update_checker.sh
 
 CMD ["/bin/bash", "/entrypoint.sh"]
