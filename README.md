@@ -26,6 +26,9 @@ Various Docker images to be used with the Pterodactyl/WISP Game Panel. All image
 - [`Java 11 openj9`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java11-openj9)
   - `quay.io/softwarenoob/pterodactyl-images:java-11-openj9`
   - `docker.io/softwarenoob/pterodactyl-images:java-11-openj9`
+- [`Java 15 openj9`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java16-openj9)
+  - `quay.io/softwarenoob/pterodactyl-images:java-15-openj9`
+  - `docker.io/softwarenoob/pterodactyl-images:java-15-openj9`  
 - [`Java 16 openj9`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java16-openj9)
   - `quay.io/softwarenoob/pterodactyl-images:java-16-openj9`
   - `docker.io/softwarenoob/pterodactyl-images:java-16-openj9`
@@ -39,5 +42,5 @@ Various Docker images to be used with the Pterodactyl/WISP Game Panel. All image
   - `quay.io/softwarenoob/pterodactyl-images:java-15-shenandoah`
   - `docker.io/softwarenoob/pterodactyl-images:java-15-shenandoah`
 - [`Java 16 shenandoah`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-16-shenandoah)
-  - `quay.io/softwarenoob/pterodactyl-images:java-16-openj9`
-  - `docker.io/softwarenoob/pterodactyl-images:java-16-openj9`
+  - `quay.io/softwarenoob/pterodactyl-images:java-16-shenandoah`
+  - `docker.io/softwarenoob/pterodactyl-images:java-16-shenandoah`
