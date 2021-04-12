@@ -19,7 +19,10 @@ Various Docker images to be used with the Pterodactyl/WISP Game Panel. All image
   - `docker.io/softwarenoob/pterodactyl-images:java-16`  
 - [`Java 17`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-17)
   - `quay.io/softwarenoob/pterodactyl-images:java-17`  
-  - `docker.io/softwarenoob/pterodactyl-images:java-17`  
+  - `docker.io/softwarenoob/pterodactyl-images:java-17`
+- [`Java 8 openj9`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java11-openj9)
+  - `quay.io/softwarenoob/pterodactyl-images:java-8-openj9`
+  - `docker.io/softwarenoob/pterodactyl-images:java-8-openj9`  
 - [`Java 11 openj9`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java11-openj9)
   - `quay.io/softwarenoob/pterodactyl-images:java-11-openj9`
   - `docker.io/softwarenoob/pterodactyl-images:java-11-openj9`
