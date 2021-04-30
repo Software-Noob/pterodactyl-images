@@ -1,7 +1,7 @@
 # ----------------------------------
 # Pterodactyl Core Dockerfile
 # ----------------------------------
-FROM        node:15-buster-slim
+FROM        --platform=$BUILDPLATFORM node:15-buster-slim
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
