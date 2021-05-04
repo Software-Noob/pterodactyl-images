@@ -17,6 +17,7 @@ if [ ! -z ${SRCDS_APPID} ]; then
     fi
 fi
 
+cd /home/container/csgo
 # Install Sourcemod/metamod
 if [ -f SOURCE_FLAG ] || [ "${SOURCEMOD}" = 1 ]; then
     echo "Updating Sourcemod/metamod..."
