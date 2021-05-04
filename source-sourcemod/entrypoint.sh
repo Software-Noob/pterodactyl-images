@@ -29,6 +29,8 @@ if [ -f SOURCE_FLAG ] || [ "${SOURCEMOD}" = 1 ]; then
     echo "Done updating Sourcemod/metamod!"
 fi
 
+cd /home/container
+
 # Replace Startup Variables
 MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
 echo ":/home/container$ ${MODIFIED_STARTUP}"
