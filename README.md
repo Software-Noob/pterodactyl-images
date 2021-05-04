@@ -2,6 +2,9 @@
 Various Docker images to be used with the Pterodactyl/WISP Game Panel. All images are hosted on Quay and Docker hub from which they can be pulled using the links below.
 
 ## Pterodactyl/WISP Images
+- [`Source with sourcemod`](https://github.com/Software-Noob/pterodactyl-images/tree/main/source-sourcemod)
+  - `quay.io/softwarenoob/pterodactyl-images:source-sourcemod`
+  - `docker.io/softwarenoob/pterodactyl-images:source-sourcemod`
 - [`Nodejs 14`](https://github.com/Software-Noob/pterodactyl-images/tree/main/debian-nodejs14)
   - `quay.io/softwarenoob/pterodactyl-images:debian-nodejs14`
   - `docker.io/softwarenoob/pterodactyl-images:debian-nodejs14`
