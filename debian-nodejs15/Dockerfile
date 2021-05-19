@@ -1,12 +1,9 @@
-# ----------------------------------
-# Pterodactyl Core Dockerfile
-# ----------------------------------
 FROM        node:15-buster-slim
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
 RUN         apt update \
-            && apt -y install ffmpeg iproute2 git sqlite3 python3 ca-certificates dnsutils build-essential \
+            && apt -y install ffmpeg iproute2 git sqlite3 python3 tzdata ca-certificates dnsutils build-essential \
             && useradd -m -d /home/container container
 
 USER        container

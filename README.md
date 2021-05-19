@@ -11,6 +11,9 @@ Various Docker images to be used with the Pterodactyl/WISP Game Panel. All image
 - [`Nodejs 15`](https://github.com/Software-Noob/pterodactyl-images/tree/main/debian-nodejs15)
   - `quay.io/softwarenoob/pterodactyl-images:debian-nodejs15`
   - `docker.io/softwarenoob/pterodactyl-images:debian-nodejs15`
+- [`Nodejs 16`](https://github.com/Software-Noob/pterodactyl-images/tree/main/debian-nodejs16)
+  - `quay.io/softwarenoob/pterodactyl-images:debian-nodejs16`
+  - `docker.io/softwarenoob/pterodactyl-images:debian-nodejs16`  
 - [`Java 7`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-7)
   - `quay.io/softwarenoob/pterodactyl-images:java-7`
   - `docker.io/softwarenoob/pterodactyl-images:java-7`  
