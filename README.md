@@ -1,7 +1,17 @@
-# pterodactyl-images
-Various Docker images to be used with the Pterodactyl/WISP Game Panel. All images are hosted on Quay and Docker hub from which they can be pulled using the links below.
+# Pterodactyl Images
+Docker images that can be used with the Pterodactyl/WISP Game Panel. All images are hosted on Quay and Docker hub from which they can be pulled using the links below.
+
+## How to add image to your egg
+
+Navigate to `Admin Panel -> Nests -> Select your egg` -> Add Docker image URL from the readme below into the Docker Images section
+
+![image](https://user-images.githubusercontent.com/10975908/120903180-56719d80-c64d-11eb-8666-02de8ea80701.png)
+
 
 ## Pterodactyl/WISP Images
+
+Add the desired image link from below to your egg using the [instructions from above](https://github.com/Software-Noob/pterodactyl-images#pterodactyl-images).
+
 - [`Source with sourcemod`](https://github.com/Software-Noob/pterodactyl-images/tree/main/source-sourcemod)
   - `quay.io/softwarenoob/pterodactyl-images:source-sourcemod`
   - `docker.io/softwarenoob/pterodactyl-images:source-sourcemod`
