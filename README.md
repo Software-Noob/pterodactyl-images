@@ -1,11 +1,11 @@
 # Pterodactyl Images
-Docker images that can be used with the Pterodactyl/WISP Game Panel. All images are hosted on ghcr (soon) and Docker hub from which they can be pulled using the links below. You can request more images by opening a new issue.
+Docker images that can be used with the Pterodactyl/WISP Game Panel. You can request more images by opening a new issue.
 
-Additional Pterodactyl images can be found at [Parkervcp](https://github.com/parkervcp/images), [Matthewpi](https://github.com/matthewpi/images) and [Yolks](https://github.com/pterodactyl/yolks) repositories.
+Additional Pterodactyl images can be found at [Parkervcp](https://github.com/parkervcp/images), [Matthewpi](https://github.com/matthewpi/images) and [Yolks](https://github.com/pterodactyl/yolks).
 
 ## How to add image to your egg
 
-Navigate to `Admin Panel -> Nests -> Select your egg` -> Add Docker image URL from the readme below into the Docker Images section.
+Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) from the [available list](https://github.com/Software-Noob/pterodactyl-images#pterodactylwisp-images) into the Docker Images section.
 
 ![image](https://user-images.githubusercontent.com/10975908/120903180-56719d80-c64d-11eb-8666-02de8ea80701.png)
 
@@ -34,13 +34,13 @@ Add the desired image link from below to your egg using the [instructions from a
 - [Java 16 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/16)
   - `ghcr.io/software-noob/pterodactyl-images:java_16_openj9`
 #### Java shenandoah  
-- [`Java 8 shenandoah`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/8)
+- [Java 8 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_shenandoah`
-- [`Java 11 shenandoah`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/11)
+- [Java 11 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/11)
   - `ghcr.io/software-noob/pterodactyl-images:java_11_shenandoah`
-- [`Java 15 shenandoah`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/15)
+- [Java 15 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/15)
   - `ghcr.io/software-noob/pterodactyl-images:java_15_shenandoah`
-- [`Java 16 shenandoah`](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/16)
+- [Java 16 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/16)
   - `ghcr.io/software-noob/pterodactyl-images:java_16_shenandoah`
 #### Java zulu  
 - [Java 8 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/8)
