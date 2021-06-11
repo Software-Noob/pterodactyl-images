@@ -1,4 +1,4 @@
-name: build java_shenandoah
+name: build java_zulu
 
 on:
   schedule:
@@ -11,7 +11,7 @@ on:
       
 jobs:
   push:
-    name: "pterodactyl-images:java_${{ matrix.tag }}zulu"
+    name: "pterodactyl-images:java_${{ matrix.tag }}_zulu"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
