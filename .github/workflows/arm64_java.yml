@@ -11,7 +11,7 @@ on:
       
 jobs:
   push:
-    name: "pterodactyl:arm64-java_${{ matrix.tag }}"
+    name: "arm64:java_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -38,4 +38,4 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            ghcr.io/software-noob/pterodacty-images:arm64-java_${{ matrix.tag }}
+            ghcr.io/software-noob/arm64:java_${{ matrix.tag }}
