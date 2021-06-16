@@ -70,15 +70,15 @@ Add the desired image link from below to your egg using the [instructions from a
 
 #### Java
 - [Java 8](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/java/8)
-  - `ghcr.io/software-noob/pterodactyl-images:java_8`
+  - `ghcr.io/software-noob/arm64:java_8`
 - [Java 11](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/java/11)
-  - `ghcr.io/software-noob/pterodactyl-images:java_11`   
+  - `ghcr.io/software-noob/arm64:java_11`   
 - [Java 15](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/java/15)
-  - `ghcr.io/software-noob/pterodactyl-images:java_11`
+  - `ghcr.io/software-noob/arm64:java_15`
 - [Java 16](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/java/16) 
-  - `ghcr.io/software-noob/pterodactyl-images:java_16`  
+  - `ghcr.io/software-noob/arm64:java_16`  
 - [Java 17](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/java/17) 
-  - `ghcr.io/software-noob/pterodactyl-images:java_17`
+  - `ghcr.io/software-noob/arm64:java_17`
 
 #### Node.js
 - [Nodejs 12](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/nodejs/12)
