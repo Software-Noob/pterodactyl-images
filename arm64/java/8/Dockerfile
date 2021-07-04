@@ -1,4 +1,4 @@
-FROM        openjdk:8-slim
+FROM        adoptopenjdk/openjdk8:debianslim-jre
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
