@@ -1,4 +1,4 @@
-FROM        openjdk:16-slim
+FROM        adoptopenjdk/openjdk16:debianslim-jre
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 

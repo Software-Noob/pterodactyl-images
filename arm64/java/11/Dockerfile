@@ -1,4 +1,4 @@
-FROM        openjdk:11-slim
+FROM        adoptopenjdk/openjdk11:debianslim-jre
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
