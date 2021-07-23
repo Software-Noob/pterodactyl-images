@@ -64,7 +64,9 @@ Add the desired image link from below to your egg using the [instructions from a
 
 #### Game specific
 - [`Source with sourcemod`](https://github.com/Software-Noob/pterodactyl-images/tree/main/games/source-sourcemod)
-  - `docker.io/softwarenoob/pterodactyl-images:source-sourcemod`
+  - `ghcr.io/software-noob/pterodactyl-images:games_source-sourcemod`
+  
+  Installs and updates source/metamod each time the server starts if egg variable `SOURCEMOD` is set to 1
 
 # ARM64 only images
 
