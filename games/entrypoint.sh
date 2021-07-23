@@ -5,6 +5,7 @@ sleep 1
 export INTERNAL_IP=`ip route get 1 | awk '{print $NF;exit}'`
 
 # Update Source Server
+
 if [ ! -z ${SRCDS_APPID} ]; then
     if [ ! -z ${SRCDS_BETAID} ]; then
         if [ ! -z ${SRCDS_BETAPASS} ]; then
