@@ -11,7 +11,7 @@ on:
       
 jobs:
   push:
-    name: "pterodactyl-images:java_${{ matrix.tag }}_openj9"
+    name: "pterodactyl-images:java_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
