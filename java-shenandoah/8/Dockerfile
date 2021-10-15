@@ -3,7 +3,7 @@ FROM        shipilev/openjdk-shenandoah:8
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
 RUN apt-get update -y \
- && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+ && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
  && useradd -d /home/container -m container
 
 USER        container
