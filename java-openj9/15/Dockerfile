@@ -1,4 +1,4 @@
-FROM        adoptopenjdk/openjdk15-openj9:debian-slim
+FROM        adoptopenjdk/openjdk15-openj9:debianslim
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
