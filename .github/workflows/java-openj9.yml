@@ -20,7 +20,6 @@ jobs:
         tag:
           - 8
           - 11
-          - 15
           - 16
     steps:
       - uses: actions/checkout@v2
