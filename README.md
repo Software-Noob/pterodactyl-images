@@ -14,8 +14,6 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 Add the desired image link from below to your egg using the [instructions from above](https://github.com/Software-Noob/pterodactyl-images#pterodactyl-images).
 
 #### Java
-- [Java 7](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/7)
-  - `ghcr.io/software-noob/pterodactyl-images:java_7`  
 - [Java 8](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8`
 - [Java 11](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/11)
@@ -29,8 +27,6 @@ Add the desired image link from below to your egg using the [instructions from a
   - `ghcr.io/software-noob/pterodactyl-images:java_8_openj9`  
 - [Java 11 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/11)
   - `ghcr.io/software-noob/pterodactyl-images:java_11_openj9`
-- [Java 15 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/15)
-  - `ghcr.io/software-noob/pterodactyl-images:java_15_openj9`  
 - [Java 16 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/16)
   - `ghcr.io/software-noob/pterodactyl-images:java_16_openj9`
 #### Java shenandoah  
@@ -38,8 +34,6 @@ Add the desired image link from below to your egg using the [instructions from a
   - `ghcr.io/software-noob/pterodactyl-images:java_8_shenandoah`
 - [Java 11 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/11)
   - `ghcr.io/software-noob/pterodactyl-images:java_11_shenandoah`
-- [Java 15 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/15)
-  - `ghcr.io/software-noob/pterodactyl-images:java_15_shenandoah`
 - [Java 16 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/16)
   - `ghcr.io/software-noob/pterodactyl-images:java_16_shenandoah`
 #### Java zulu  
@@ -47,8 +41,6 @@ Add the desired image link from below to your egg using the [instructions from a
   - `ghcr.io/software-noob/pterodactyl-images:java_8_zulu`
 - [Java 11 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/11)
   - `ghcr.io/software-noob/pterodactyl-images:java_11_zulu`
-- [Java 15 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/15)
-  - `ghcr.io/software-noob/pterodactyl-images:java_15_zulu`
 - [Java 16 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/16)
   - `ghcr.io/software-noob/pterodactyl-images:java_16_zulu`
   
