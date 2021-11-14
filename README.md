@@ -53,6 +53,8 @@ Add the desired image link from below to your egg using the [instructions from a
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_15`
 - [Nodejs 16](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/16)
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_16`  
+- [Nodejs 17](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/17)
+  - `ghcr.io/software-noob/pterodactyl-images:nodejs_17`   
 
 #### Game specific
 - [`Source with sourcemod`](https://github.com/Software-Noob/pterodactyl-images/tree/main/games/source-sourcemod)
@@ -82,7 +84,9 @@ Add the desired image link from below to your egg using the [instructions from a
 - [Nodejs 15](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/nodejs/15)
   - `ghcr.io/software-noob/arm64:nodejs_15`
 - [Nodejs 16](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/nodejs/16)
-  - `ghcr.io/software-noob/arm64:nodejs_16`  
+  - `ghcr.io/software-noob/arm64:nodejs_16`
+- [Nodejs 17](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/nodejs/17)
+  - `ghcr.io/software-noob/arm64:nodejs_17`  
 
 #### Python
 - [Python 3.6](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/python/3.6)
