@@ -1,4 +1,4 @@
-FROM        adoptopenjdk/openjdk8-openj9:debianslim
+FROM        ibm-semeru-runtimes:open-8-jdk
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
