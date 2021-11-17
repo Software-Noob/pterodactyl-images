@@ -43,6 +43,8 @@ Add the desired image link from below to your egg using the [instructions from a
   - `ghcr.io/software-noob/pterodactyl-images:java_11_zulu`
 - [Java 16 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/16)
   - `ghcr.io/software-noob/pterodactyl-images:java_16_zulu`
+- [Java 17 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/17)
+  - `ghcr.io/software-noob/pterodactyl-images:java_17_zulu`  
   
 #### Node.js
 - [Nodejs 12](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/12)
