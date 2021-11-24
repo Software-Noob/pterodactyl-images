@@ -34,8 +34,8 @@ Add the desired image link from below to your egg using the [instructions from a
   - `ghcr.io/software-noob/pterodactyl-images:java_8_shenandoah`
 - [Java 11 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/11)
   - `ghcr.io/software-noob/pterodactyl-images:java_11_shenandoah`
-- [Java 16 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/16)
-  - `ghcr.io/software-noob/pterodactyl-images:java_16_shenandoah`
+- [Java 17 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/16)
+  - `ghcr.io/software-noob/pterodactyl-images:java_17_shenandoah`
 #### Java zulu  
 - [Java 8 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_zulu`

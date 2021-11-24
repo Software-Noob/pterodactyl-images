@@ -1,4 +1,4 @@
-FROM        shipilev/openjdk:8
+FROM        shipilev/openjdk:17
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
@@ -11,6 +11,6 @@ ENV         USER=container HOME=/home/container
 
 WORKDIR     /home/container
 
-COPY        ./entrypoint.sh /entrypoint.sh
+COPY        ./../entrypoint.sh /entrypoint.sh
 
 CMD         [ "/bin/bash", "/entrypoint.sh" ]
