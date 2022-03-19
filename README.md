@@ -2,7 +2,7 @@
 
 Docker images that can be used with the Pterodactyl/WISP Game Panel. You can request more images by opening a new issue.
 
-Additional Pterodactyl images can be found at [Parkervcp](https://github.com/parkervcp/images), [Matthewpi](https://github.com/matthewpi/images) and [Yolks](https://github.com/pterodactyl/yolks).
+Additional Pterodactyl images can be found at [Parkervcp](https://github.com/parkervcp/images), [Matthewpi](https://github.com/matthewpi/images) and [Yolks](https://github.com/pterodactyl/yolks) repositories.
 
 ## How to add image to your egg
 
@@ -21,14 +21,14 @@ Add the desired image link from below to your egg using the [instructions from a
 - [Java 11](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/11)
   - `ghcr.io/software-noob/pterodactyl-images:java_11`
 - [Java 16](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/16)
-  - `ghcr.io/software-noob/pterodactyl-images:java_16`  
+  - `ghcr.io/software-noob/pterodactyl-images:java_16` 
 - [Java 17](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/17)
   - `ghcr.io/software-noob/pterodactyl-images:java_17`
 
 #### Java openj9
 
 - [Java 8 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/8)
-  - `ghcr.io/software-noob/pterodactyl-images:java_8_openj9`  
+  - `ghcr.io/software-noob/pterodactyl-images:java_8_openj9`
 - [Java 11 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/11)
   - `ghcr.io/software-noob/pterodactyl-images:java_11_openj9`
 - [Java 16 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/16)
@@ -65,7 +65,7 @@ Add the desired image link from below to your egg using the [instructions from a
 - [Nodejs 15](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/15)
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_15`
 - [Nodejs 16](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/16)
-  - `ghcr.io/software-noob/pterodactyl-images:nodejs_16`  
+  - `ghcr.io/software-noob/pterodactyl-images:nodejs_16`
 - [Nodejs 17](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/17)
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_17`
 
@@ -74,7 +74,11 @@ Add the desired image link from below to your egg using the [instructions from a
 - [`Source with sourcemod`](https://github.com/Software-Noob/pterodactyl-images/tree/main/games/source-sourcemod)
   - `ghcr.io/software-noob/pterodactyl-images:games_source-sourcemod`
 
-  Installs and updates source/metamod each time the server starts if egg variable `SOURCEMOD` is set to 1
+  Optionally installs and updates SourceMod/Metamod on each server startup. Requires adding egg environment variable `SOURCEMOD`.
+
+  ![image](https://user-images.githubusercontent.com/10975908/159126935-2e3f2883-3b89-4395-b28d-ab23dad0e5f8.png)
+
+  Custom versions can be set with the use of `SM_VERSION` and `MM_VERSION` variables. Invalid versions will default to the latest stable version.
 
 # ARM64 only images
 
