@@ -14,5 +14,5 @@ USER        container
 ENV         HOME /home/container
 WORKDIR     /home/container
 
-COPY        ./entrypoint.sh /entrypoint.sh
+COPY        source-sourcemod/entrypoint.sh /entrypoint.sh
 CMD         [ "/bin/bash", "/entrypoint.sh" ]
