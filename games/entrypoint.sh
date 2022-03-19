@@ -18,21 +18,35 @@ if [ ! -z ${SRCDS_APPID} ]; then
     fi
 fi
 
-mkdir -p /home/container/csgo/tmpfiles
-cd /home/container/csgo/tmpfiles
-# Install Sourcemod/metamod
-if [ -f SOURCE_FLAG ] || [ "${SOURCEMOD}" = 1 ]; then
-    echo "Downloading Sourcemod/metamod..."
-    curl -L -o sourcemod.tar.gz "https://sourcemod.net/latest.php?os=linux&version=1.10" -o metamod.tar.gz "https://sourcemm.net/latest.php?os=linux&version=1.11"
+
+# Update Sourcemod/metamod
+if [ -f UPDATE_SM ] || [ "${SOURCEMOD}" = 1 ]; then
+    mkdir -p /home/container/csgo/tmpfiles
+    cd /home/container/csgo/tmpfiles
+    echo "Updating Sourcemod/metamod..."
+    curl -L -o sourcemod.tar.gz "https://sourcemod.net/latest.php?os=linux&version=${SM_VERSION}" -o metamod.tar.gz "https://sourcemm.net/latest.php?os=linux&version=${MM_VERSION}"
     echo "Extracting MM files"
 	tar -xf metamod.tar.gz --directory /home/container/csgo
     echo "Extracting SM files"
     tar -xf sourcemod.tar.gz
     echo "Copying SM files"
-    cp -R addons/sourcemod/{bin,extensions,gamedata,translations} ../addons/sourcemod/
+    cp -R addons/sourcemod/{bin,extensions,gamedata} ../addons/sourcemod/
     echo "Done updating Sourcemod/metamod!"
+    rm -rf /home/container/csgo/tmpfiles
 fi
-rm -rf /home/container/csgo/tmpfiles
+# Full Install Sourcemod/metamod for first time setup
+if [ -f FULL_INSTALL ] || [ "${SOURCEMOD}" = 2 ]; then
+    cd /home/container/csgo
+    echo "Full installing Sourcemod/metamod..."
+    curl -L -o sourcemod.tar.gz "https://sourcemod.net/latest.php?os=linux&version=${SM_VERSION}" -o metamod.tar.gz "https://sourcemm.net/latest.php?os=linux&version=${MM_VERSION}"
+    echo "Extracting MM files"
+	tar -xf metamod.tar.gz
+    echo "Extracting SM files"
+    tar -xf sourcemod.tar.gz
+    echo "Deleting archives"
+    rm sourcemod.tar.gz metamod.tar.gz
+    echo "Done full installing Sourcemod/metamod!"
+fi
 
 cd /home/container
 
