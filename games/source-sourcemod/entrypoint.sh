@@ -44,23 +44,35 @@ if [[ "${SOURCEMOD}" = 1 || "${SOURCEMOD}" == "true" ]]; then
 
     # Should custom versions be provided, check that they are valid. If not, use latest stable version.
     if [[ -n ${SM_VERSION} ]]; then
-        SOURCEMOD_URL="https://sourcemod.net/latest.php?os=linux&version=${SM_VERSION}"
-        if [[ -n ${METAMOD_URL} ]]; then
-            METAMOD_URL="https://sourcemm.net/latest.php?os=linux&version=${MM_VERSION}"
+        SOURCEMOD_SCRAPE=$(curl https://sm.alliedmods.net/smdrop/${SM_VERSION}/sourcemod-latest-linux -s)
+        SOURCEMOD_URL="https://sm.alliedmods.net/smdrop/${SM_VERSION}/${SOURCEMOD_SCRAPE}"
+        if [[ -n ${MM_VERSION} ]]; then
+            METAMOD_SCRAPE=$(curl https://mms.alliedmods.net/mmsdrop/${MM_VERSION}/mmsource-latest-linux -s)
+            METAMOD_URL="https://mms.alliedmods.net/mmsdrop/${MM_VERSION}/${METAMOD_SCRAPE}"
         fi
     fi
 
     function is_valid_url() {
-        local url="$1"
-        curl --output /dev/null --silent --head --fail "$url"
+        local URL="$1"
+        curl --output /dev/null --silent --head --fail "$URL"
         return $?
     }
 
-    if is_valid_url "${SOURCEMOD_URL}" && is_valid_url "${METAMOD_URL}"; then
-        curl -sSL -o sourcemod.tar.gz "${SOURCEMOD_URL}" -o metamod.tar.gz "${METAMOD_URL}"
-    else
-        echo -e "${RED}The specified SourceMod or Metamod version is not valid. Defaulting to latest stable SM 1.10 and MM 1.11 versions.${RESET_COLOR}"
+    function download_default_stable() {
+        echo -e "Defaulting to latest stable SM 1.10 and MM 1.11 versions."
         curl -sSL -o sourcemod.tar.gz "https://sourcemod.net/latest.php?os=linux&version=1.10" -o metamod.tar.gz "https://sourcemm.net/latest.php?os=linux&version=1.11"
+    }
+
+    if is_valid_url "${SOURCEMOD_URL}"; then
+        if is_valid_url "${METAMOD_URL}"; then
+            curl -sSL -o sourcemod.tar.gz "${SOURCEMOD_URL}" -o metamod.tar.gz "${METAMOD_URL}"
+        else
+            echo -e "${RED}The specified Metamod version: ${MM_VERSION} is not valid.${RESET_COLOR}"
+            download_default_stable
+        fi
+    else
+        echo -e "${RED}The specified SourceMod version: ${SM_VERSION} is not valid.${RESET_COLOR}"
+        download_default_stable
     fi
 
     # Extract SourceMod and Metamod
