@@ -1,14 +1,16 @@
 #!/bin/bash
-cd /home/container
+cd /home/container || exit 1
 sleep 1
 
+CYAN='\033[0;36m'
 GREEN='\033[0;32m'
 RED='\033[0;31m'
 YELLOW='\033[1;33m'
 RESET_COLOR='\033[0m'
 
-# Make internal Docker IP address available to processes.
-export INTERNAL_IP=$(ip route get 1 | awk '{print $NF;exit}')
+# Set environment variable that holds the Internal Docker IP
+INTERNAL_IP=$(ip route get 1 | awk '{print $(NF-2);exit}')
+export INTERNAL_IP
 
 # This image allows users to automatically download sourcemod/metamod each time the server starts
 # Egg must have environment variable SOURCEMOD set to a value of 1 or true for this to work
@@ -34,7 +36,7 @@ fi
 # Install SourceMod/Metamod when egg variable SOURCEMOD is 1 or true. Otherwise, skip this step.
 if [[ "${SOURCEMOD}" = 1 || "${SOURCEMOD}" == "true" ]]; then
     mkdir -p /home/container/csgo/tmpfiles
-    cd /home/container/csgo/tmpfiles
+    cd /home/container/csgo/tmpfiles || exit 1
 
     echo -e "${YELLOW}SourceMod variable is set to 1. Updating SourceMod/Metamod...${RESET_COLOR}"
 
@@ -92,11 +94,13 @@ if [[ "${SOURCEMOD}" = 1 || "${SOURCEMOD}" == "true" ]]; then
     rm -rf /home/container/csgo/tmpfiles
 fi
 
-cd /home/container
+cd /home/container || exit 1
 
 # Replace Startup Variables
+# shellcheck disable=SC2086
 MODIFIED_STARTUP=$(eval echo $(echo "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g'))
-echo -e "\033[0;36mSTARTUP: /home/container$ ${MODIFIED_STARTUP}${RESET_COLOR}"
+echo -e "${CYAN}STARTUP /home/container: ${MODIFIED_STARTUP} ${RESET_COLOR}"
 
 # Run the Server
+# shellcheck disable=SC2086
 eval ${MODIFIED_STARTUP}
