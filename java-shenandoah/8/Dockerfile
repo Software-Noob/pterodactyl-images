@@ -1,4 +1,4 @@
-FROM        shipilev/openjdk:8
+FROM        shipilev/openjdk-shenandoah:8
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
