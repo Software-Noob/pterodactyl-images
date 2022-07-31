@@ -104,7 +104,7 @@ Add the desired image link from below to your egg using the [instructions from a
 - [Python 3.10](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.10)
   - `ghcr.io/software-noob/pterodactyl-images:python_3.10`
 - [Python 3.11 RC](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.11)
-  - `ghcr.io/software-noob/pterodactyl-images:python_3.11.rc`
+  - `ghcr.io/software-noob/pterodactyl-images:python_3.11`
 
 ### Game specific
 
