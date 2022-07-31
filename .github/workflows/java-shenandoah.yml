@@ -9,7 +9,7 @@ on:
       - main
     paths:
       - java-shenandoah/**
-      
+
 jobs:
   push:
     name: "pterodactyl-images:java_${{ matrix.tag }}_shenandoah"
@@ -21,6 +21,7 @@ jobs:
           - 8
           - 11
           - 17
+          - 18
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v1

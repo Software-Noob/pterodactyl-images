@@ -9,7 +9,7 @@ on:
       - main
     paths:
       - java/**
-      
+
 jobs:
   push:
     name: "pterodactyl-images:java_${{ matrix.tag }}"
@@ -21,6 +21,7 @@ jobs:
           - 8
           - 16
           - 17
+          - 18
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1
