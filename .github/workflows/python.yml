@@ -12,7 +12,7 @@ on:
 
 jobs:
   push:
-    name: "arm64:python_${{ matrix.tag }}"
+    name: "pterodactyl-images:python_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -41,4 +41,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/software-noob/pterodactyl:python_${{ matrix.tag }}
+            ghcr.io/software-noob/pterodactyl-images:python_${{ matrix.tag }}
