@@ -1,4 +1,4 @@
-FROM        node:16-buster-slim
+FROM        node:16-bullseye-slim
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
