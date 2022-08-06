@@ -9,4 +9,5 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/" # Must be set to / although they're located in .github/workflows
     schedule:
-      interval: "daily"
+      interval: "monthly"
+    open-pull-requests-limit: 0
