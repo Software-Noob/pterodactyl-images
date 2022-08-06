@@ -3,16 +3,19 @@ name: build games
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 1"
+    - cron: "0 17 1,15 * *" # bi-weekly on 1st and 15th calendar day at 17:00
   push:
     branches:
       - main
     paths:
       - games/**
+concurrency:
+  group: games-${{ github.ref }}-1
+  cancel-in-progress: true
 
 jobs:
   push:
-    name: "pterodactyl-images:games_${{ matrix.tag }}"
+    name: "games_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -20,17 +23,24 @@ jobs:
         tag:
           - source-sourcemod
     steps:
-      - uses: actions/checkout@v2
-      - uses: docker/setup-buildx-action@v1
+      - name: Git checkout for Github repository workspace
+        uses: actions/checkout@v2
+
+      - name: Setup Docker buildx
+        uses: docker/setup-buildx-action@v1
         with:
           version: "v0.8.2"
           buildkitd-flags: --debug
-      - uses: docker/login-action@v1
+
+      - name: Login to registry
+        uses: docker/login-action@v1
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.REGISTRY_TOKEN }}
-      - uses: docker/build-push-action@v2
+
+      - name: Build and push image
+        uses: docker/build-push-action@v2
         with:
           context: ./games
           file: ./games/${{ matrix.tag }}/Dockerfile
