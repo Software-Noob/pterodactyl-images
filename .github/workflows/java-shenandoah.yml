@@ -46,7 +46,7 @@ jobs:
           password: ${{ secrets.REGISTRY_TOKEN }}
 
       - name: Build and push image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3
         with:
           context: ./java-shenandoah
           file: ./java-shenandoah/${{ matrix.tag }}/Dockerfile
