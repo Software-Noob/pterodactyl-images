@@ -44,7 +44,7 @@ jobs:
           password: ${{ secrets.REGISTRY_TOKEN }}
 
       - name: Build and push image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3
         with:
           context: ./java-openj9
           file: ./java-openj9/${{ matrix.tag }}/Dockerfile
