@@ -1,4 +1,4 @@
-FROM        openjdk:17-slim
+FROM        eclipse-temurin:17
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
@@ -13,4 +13,4 @@ WORKDIR     /home/container
 
 COPY        ./entrypoint.sh /entrypoint.sh
 
-CMD         ["/bin/bash", "/entrypoint.sh"]
+CMD         [ "/bin/bash", "/entrypoint.sh" ]

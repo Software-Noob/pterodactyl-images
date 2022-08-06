@@ -1,4 +1,4 @@
-FROM        openjdk:11-slim
+FROM        eclipse-temurin:11
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 

@@ -1,4 +1,4 @@
-# Pterodactyl Images
+# Pterodactyl/WISP Docker Images
 
 Docker images that can be used with the Pterodactyl/WISP Game Panel. You can request more images by opening a new issue. These are mostly created for myself.
 
@@ -10,23 +10,19 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 
 ![image](https://user-images.githubusercontent.com/10975908/120903180-56719d80-c64d-11eb-8666-02de8ea80701.png)
 
-## Pterodactyl/WISP Images
-
-Add the desired image link from below to your egg using the [instructions from above](https://github.com/Software-Noob/pterodactyl-images#pterodactyl-images).
-
 ### Supported Platforms
 
-| Image           | Supported platforms |
-| --------------- | ------------------- |
-| Java OpenJDK    | AMD64, ARM64        |
-| Java OpenJ9     | AMD64               |
-| Java Shenandoah | AMD64, ARM64        |
-| Java Azul Zulu  | AMD64, ARM64        |
-| Node.js         | AMD64, ARM64        |
-| Python          | AMD64, ARM64        |
-| Sourcemod       | AMD64               |
+| Image                | Supported platforms |
+| -------------------- | ------------------- |
+| Java Azul Zulu       | AMD64, ARM64        |
+| Java Eclipse Temurin | AMD64, ARM64        |
+| Java Shenandoah      | AMD64, ARM64        |
+| Java OpenJ9          | AMD64               |
+| Node.js              | AMD64, ARM64        |
+| Python               | AMD64, ARM64        |
+| Sourcemod            | AMD64               |
 
-### Java OpenJDK [AMD64/ARM64]
+### Java Eclipse Temurin [AMD64/ARM64]
 
 - [Java 8](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8`
