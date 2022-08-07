@@ -1,4 +1,5 @@
-FROM        eclipse-temurin:8
+# must be pinned to older version for Forge support. @see https://github.com/MultiMC/Launcher/issues/4470#issuecomment-1025114255 and https://github.com/McModLauncher/modlauncher/issues/91
+FROM        eclipse-temurin:8u312-b07-jdk-focal
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
