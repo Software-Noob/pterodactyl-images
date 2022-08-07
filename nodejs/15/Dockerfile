@@ -2,9 +2,11 @@ FROM        node:15-bullseye-slim
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
-RUN         apt update \
-            && apt -y install ffmpeg iproute2 git sqlite3 python3 tzdata ca-certificates dnsutils build-essential \
+RUN         apt-get update \
+            && apt-get -y install --no-install-recommends ffmpeg iproute2 git sqlite3 python3 tzdata ca-certificates dnsutils build-essential \
             && npm -g install npm@latest \
+            && apt-get clean \
+            && rm -rf /var/lib/apt/lists/* \
             && useradd -m -d /home/container container
 
 USER        container
