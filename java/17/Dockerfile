@@ -1,4 +1,4 @@
-FROM        eclipse-temurin:17
+FROM        eclipse-temurin:17-focal
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
@@ -8,7 +8,6 @@ RUN apt-get update -y \
 
 USER        container
 ENV         USER=container HOME=/home/container
-
 WORKDIR     /home/container
 
 COPY        ./entrypoint.sh /entrypoint.sh

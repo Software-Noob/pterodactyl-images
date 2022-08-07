@@ -1,4 +1,4 @@
-FROM        eclipse-temurin:16
+FROM        eclipse-temurin:16-focal
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
