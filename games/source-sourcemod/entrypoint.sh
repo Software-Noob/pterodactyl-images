@@ -61,8 +61,8 @@ if [[ "${SOURCEMOD}" = 1 || "${SOURCEMOD}" == "true" ]]; then
     }
 
     function download_default_stable() {
-        echo -e "Defaulting to latest stable SM 1.10 and MM 1.11 versions."
-        curl -sSL -o sourcemod.tar.gz "https://sourcemod.net/latest.php?os=linux&version=1.10" -o metamod.tar.gz "https://sourcemm.net/latest.php?os=linux&version=1.11"
+        echo -e "Defaulting to the latest stable SM 1.11 and MM 1.11 versions."
+        curl -sSL -o sourcemod.tar.gz "https://sourcemod.net/latest.php?os=linux&version=1.11" -o metamod.tar.gz "https://sourcemm.net/latest.php?os=linux&version=1.11"
     }
 
     if is_valid_url "${SOURCEMOD_URL}"; then
