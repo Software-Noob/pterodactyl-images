@@ -1,4 +1,4 @@
-FROM        python:3.11-rc
+FROM        python:3.11-slim
 
 LABEL       author="Software-noob" maintainer="admin@softwarenoob.com"
 
