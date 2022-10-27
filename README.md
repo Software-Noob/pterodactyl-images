@@ -96,6 +96,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_17`
 - [Nodejs 18](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/18)
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_18`
+- [Nodejs 19](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/19)
+  - `ghcr.io/software-noob/pterodactyl-images:nodejs_19`
 
 #### Python [AMD64/ARM64]
 
