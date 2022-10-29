@@ -17,6 +17,10 @@ export INTERNAL_IP
 # Optionally users can specify the sourcemod and metamod versions with the use of SM_VERSION and MM_VERSION egg environment variables
 # Invalid versions will default to the latest stable version, that is currently hard-coded.
 
+# Install path defaults to csgo folder. It can be altered with the envrionment variable INSTALL_PATH
+# TODO - Find all default paths for supported games and detect them automatically (tf,dod,css,csgo,etc)
+INSTALL_PATH=${INSTALL_PATH:-csgo}
+
 # Update Source Server
 if [[ -n ${SRCDS_APPID} ]]; then
     if [[ -n ${SRCDS_BETAID} ]]; then
@@ -30,13 +34,13 @@ if [[ -n ${SRCDS_APPID} ]]; then
     fi
 fi
 
-# TODO support specific versions, such as 1.10 6351
-# TODO backup/delete sourcemod when variable is set to 0 or false
+# TODO - support specific versions, such as 1.10 6351
+# TODO - backup by moving sourcemod folder when variable is set to 0 or false
 
 # Install SourceMod/Metamod when egg variable SOURCEMOD is 1 or true. Otherwise, skip this step.
 if [[ "${SOURCEMOD}" = 1 || "${SOURCEMOD}" == "true" ]]; then
-    mkdir -p /home/container/csgo/tmpfiles
-    cd /home/container/csgo/tmpfiles || exit 1
+    mkdir -p /home/container/${INSTALL_PATH}/tmpfiles
+    cd /home/container/${INSTALL_PATH}/tmpfiles || exit 1
 
     echo -e "${YELLOW}SourceMod variable is set to 1. Updating SourceMod/Metamod...${RESET_COLOR}"
 
@@ -79,11 +83,11 @@ if [[ "${SOURCEMOD}" = 1 || "${SOURCEMOD}" == "true" ]]; then
 
     # Extract SourceMod and Metamod
     echo "Extracting MM files"
-    tar -xf metamod.tar.gz --directory /home/container/csgo
+    tar -xf metamod.tar.gz --directory /home/container/${INSTALL_PATH}
     # check if sourcemod.cfg exists to determine if we need a full install or an update
-    if [[ ! -f /home/container/csgo/cfg/sourcemod/sourcemod.cfg ]]; then
+    if [[ ! -f /home/container/${INSTALL_PATH}/cfg/sourcemod/sourcemod.cfg ]]; then
         echo "Existing sourcemod.cfg not found. Performing full SourceMod install."
-        tar -xf sourcemod.tar.gz --directory /home/container/csgo
+        tar -xf sourcemod.tar.gz --directory /home/container/${INSTALL_PATH}
     else
         echo "Extracting SM files"
         tar -xf sourcemod.tar.gz
@@ -91,7 +95,7 @@ if [[ "${SOURCEMOD}" = 1 || "${SOURCEMOD}" == "true" ]]; then
     fi
     echo -e "${GREEN}Done updating Sourcemod/metamod!${RESET_COLOR}"
 
-    rm -rf /home/container/csgo/tmpfiles
+    rm -rf /home/container/${INSTALL_PATH}/tmpfiles
 fi
 
 cd /home/container || exit 1
