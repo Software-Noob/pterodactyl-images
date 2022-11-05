@@ -3,7 +3,7 @@ FROM        ghcr.io/graalvm/jdk:ol8-java11
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
 RUN         microdnf update \
-            && microdnf install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute \
+            && microdnf install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute gcc gcc-c++ freetype libstdc++ lsof \
             && microdnf clean all \
             && adduser --home-dir /home/container container
 
