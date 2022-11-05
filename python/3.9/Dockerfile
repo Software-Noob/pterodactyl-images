@@ -1,6 +1,8 @@
 FROM        python:3.9-slim
 
 LABEL       author="Software-noob" maintainer="admin@softwarenoob.com"
+LABEL       org.opencontainers.image.source="https://github.com/Software-Noob/pterodactyl-images"
+LABEL       org.opencontainers.image.licenses="MIT"
 
 RUN         apt-get update \
             && apt-get -y install --no-install-recommends git gcc g++ ca-certificates dnsutils curl iproute2 ffmpeg procps locales \
