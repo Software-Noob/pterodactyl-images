@@ -1,6 +1,8 @@
 FROM        ghcr.io/graalvm/jdk:ol8-java17
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
+LABEL       org.opencontainers.image.source="https://github.com/Software-Noob/pterodactyl-images"
+LABEL       org.opencontainers.image.licenses="MIT"
 
 RUN         microdnf update \
             && microdnf install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute gcc gcc-c++ freetype libstdc++ lsof \

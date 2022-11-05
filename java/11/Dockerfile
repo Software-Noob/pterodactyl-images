@@ -1,6 +1,8 @@
 FROM        eclipse-temurin:11-focal
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
+LABEL       org.opencontainers.image.source="https://github.com/Software-Noob/pterodactyl-images"
+LABEL       org.opencontainers.image.licenses="MIT"
 
 RUN         apt-get update -y \
             && apt-get install -y --no-install-recommends curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 libstdc++6 lsof build-essential tzdata iproute2 locales \

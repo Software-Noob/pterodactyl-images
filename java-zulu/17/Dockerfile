@@ -1,6 +1,9 @@
 FROM        azul/zulu-openjdk:17
 
 LABEL       author="Software-noob" maintainer="admin@softwarenoob.com"
+LABEL       org.opencontainers.image.source="https://github.com/Software-Noob/pterodactyl-images"
+LABEL       org.opencontainers.image.licenses="MIT"
+
 ENV         DEBIAN_FRONTEND noninteractive
 
 RUN         apt-get update \
