@@ -44,10 +44,6 @@ if [[ "${SOURCEMOD}" = 1 || "${SOURCEMOD}" == "true" ]]; then
 
     echo -e "${YELLOW}SourceMod variable is set to 1. Updating SourceMod/Metamod...${RESET_COLOR}"
 
-    # set default fallback stable versions
-    SOURCEMOD_URL="https://sourcemod.net/latest.php?os=linux&version=1.10"
-    METAMOD_URL="https://sourcemm.net/latest.php?os=linux&version=1.11"
-
     # Should custom versions be provided, check that they are valid. If not, use latest stable version.
     if [[ -n ${SM_VERSION} ]]; then
         SOURCEMOD_SCRAPE=$(curl https://sm.alliedmods.net/smdrop/${SM_VERSION}/sourcemod-latest-linux -s)
