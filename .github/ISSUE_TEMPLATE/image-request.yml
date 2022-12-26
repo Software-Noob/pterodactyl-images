@@ -1,4 +1,4 @@
-name: 🥚 Image Request
+name: Image Request
 description: Request a new image or modification to an existing image
 title: "[Image Request]: "
 labels: ["image request"]
@@ -29,8 +29,12 @@ body:
       label: Image Request
       description: Provide changes you are proposing
       placeholder: |
+        Example 1
+
         The sourcemod image should have X dependency installed for Y plugin that requires it as documented here: https://docs.example.com
+
         Example 2
+
         New Node version has been released and I would like to have it available in the image
     validations:
       required: true

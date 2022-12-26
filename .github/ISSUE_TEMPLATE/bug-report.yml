@@ -1,4 +1,4 @@
-name: 🥚 Bug Report
+name: Bug Report
 description: Something is not working as expected
 title: "[Bug Report]: "
 labels: ["bug"]
@@ -12,6 +12,9 @@ body:
     attributes:
       label: Bug Report
       description: Explain the bug with as much information as possible including any error messages. Low effort bug reports will be closed.
-      placeholder: Server crashed after doing X and Y. Error message is ... and previous console output is ...
+      placeholder: |
+       Server crashed after doing X and Y.
+       Crash message is ...
+       The whole console output is ...
     validations:
       required: true
