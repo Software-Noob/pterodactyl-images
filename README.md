@@ -120,7 +120,7 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 
 ### Game specific
 
-#### Sourcemod [ARM64]
+#### Sourcemod [AMD64]
 
 - [Source with sourcemod](https://github.com/Software-Noob/pterodactyl-images/tree/main/games/source-sourcemod)
   - `ghcr.io/software-noob/pterodactyl-images:games_source-sourcemod`
