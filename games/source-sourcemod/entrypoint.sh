@@ -14,7 +14,6 @@ export INTERNAL_IP
 
 # Available Egg Variables
 
-
 ###################################################################################################################
 # SRCDS_APPID - Steam App ID of the game server (required) (ex: 740)                                              #
 # SRCDS_BETAID - Steam App Beta ID of the game server (optional) (ex: 123456)                                     #
@@ -59,6 +58,19 @@ download_default_stable() {
     curl --location --output sourcemod.tar.gz "$SOURCEMOD_LATEST" --output metamod.tar.gz "$METAMOD_LATEST"
 }
 
+# Auto detect the game install path by looking for the most common game folders. Default to csgo if none are found or provided by the user.
+INSTALL_PATH="${INSTALL_PATH:-csgo}"
+
+detect_install_path() {
+    SUPPORTED_GAMES=("csgo" "tf" "css" "dod" "cstrike" "left4dead" "leftdead2" "contagion" "alienswarm" "orangebox" "orangebox_valve" "sdk2013" "original" "darkmessiah" "bloodygoodtime" "eye" "blade" "insurgency" "pvkii" "mcv" "hl2mp" "ship")
+
+    for i in "${SUPPORTED_GAMES[@]}"; do
+        if [[ -d /home/container/"${i}" ]]; then
+            INSTALL_PATH="${i}"
+        fi
+    done
+    print_bold_white "Current detected game install folder is: ${INSTALL_PATH}"
+}
 
 # Update Server
 if [[ -n ${SRCDS_APPID} ]]; then
@@ -82,7 +94,7 @@ if [[ "${SOURCEMOD}" = 1 || "${SOURCEMOD}" == "true" ]]; then
     cd /home/container/"${INSTALL_PATH}"/tmpfiles || exit 1
 
     print_yellow "SourceMod variable is set to 1 or true. Installing SourceMod/Metamod..."
-
+    detect_install_path
     # Should custom versions be provided, check that they are valid. If not, use latest stable version.
     if [[ -n "${SM_VERSION}" ]]; then
         SOURCEMOD_SCRAPE=$(curl https://sm.alliedmods.net/smdrop/${SM_VERSION}/sourcemod-latest-linux -sS)
