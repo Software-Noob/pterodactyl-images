@@ -10,6 +10,14 @@ on:
     paths:
       - python/**
 
+permissions:
+  actions: read
+  packages: read|write
+
+concurrency:
+  group: python-${{ github.ref }}-1
+  cancel-in-progress: true
+
 jobs:
   push:
     name: "python_${{ matrix.tag }}"
@@ -43,7 +51,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.REGISTRY_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push image
         uses: docker/build-push-action@v3
