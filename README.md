@@ -12,18 +12,19 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 
 ### Supported Platforms
 
-| Image                | Supported platforms |
-| -------------------- | ------------------- |
-| Java Azul Zulu       | AMD64, ARM64        |
-| Java Eclipse Temurin | AMD64, ARM64        |
-| Java GraalVM         | AMD64, ARM64        |
-| Java Shenandoah      | AMD64, ARM64        |
-| Java OpenJ9          | AMD64               |
-| Node.js              | AMD64, ARM64        |
-| Python               | AMD64, ARM64        |
-| Sourcemod            | AMD64               |
+| Image                                                                                                       | Supported platforms |
+| ----------------------------------------------------------------------------------------------------------- | ------------------- |
+| [Java Azul Zulu](https://github.com/Software-Noob/pterodactyl-images#java-azul-zulu-amd64arm64)             | AMD64, ARM64        |
+| [Java Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images#java-amazon-corretto-amd64arm64) | AMD64, ARM64        |
+| [Java Eclipse Temurin](https://github.com/Software-Noob/pterodactyl-images#java-eclipse-temurin-amd64arm64) | AMD64, ARM64        |
+| [Java GraalVM](https://github.com/Software-Noob/pterodactyl-images#java-graalvm-amd64arm64)                 | AMD64, ARM64        |
+| [Java OpenJ9](https://github.com/Software-Noob/pterodactyl-images#java-openj9-amd64)                        | AMD64               |
+| [Java Shenandoah](https://github.com/Software-Noob/pterodactyl-images#java-shenandoah-amd64arm64)           | AMD64, ARM64        |
+| [Node.js](https://github.com/Software-Noob/pterodactyl-images#nodejs-amd64arm64)                            | AMD64, ARM64        |
+| [Python](https://github.com/Software-Noob/pterodactyl-images#python-amd64arm64)                             | AMD64, ARM64        |
+| [Sourcemod](https://github.com/Software-Noob/pterodactyl-images#sourcemod-amd64)                            | AMD64               |
 
-#### Java Azul Zulu [AMD64/ARM64]
+### Java Azul Zulu [AMD64/ARM64]
 
 - [Java 8 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_zulu`
@@ -37,6 +38,17 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_18_zulu`
 - [Java 19 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/19)
   - `ghcr.io/software-noob/pterodactyl-images:java_19_zulu`
+
+### Java Amazon Corretto [AMD64/ARM64]
+
+- [Java 8 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/8)
+  - `ghcr.io/software-noob/pterodactyl-images:java_8_corretto`
+- [Java 11 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/11)
+  - `ghcr.io/software-noob/pterodactyl-images:java_11_corretto`
+- [Java 17 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/17)
+  - `ghcr.io/software-noob/pterodactyl-images:java_17_corretto`
+- [Java 19 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/19)
+  - `ghcr.io/software-noob/pterodactyl-images:java_19_corretto`
 
 ### Java Eclipse Temurin [AMD64/ARM64]
 
@@ -62,7 +74,7 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 - [Java 17 GraalVM JDK](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-graalvm/17)
   - `ghcr.io/software-noob/pterodactyl-images:java_17_graalvm`
 
-#### Java OpenJ9 [AMD64]
+### Java OpenJ9 [AMD64]
 
 - [Java 8 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_openj9`
@@ -75,7 +87,7 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 - [Java 18 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/18)
   - `ghcr.io/software-noob/pterodactyl-images:java_18_openj9`
 
-#### Java Shenandoah [AMD64/ARM64]
+### Java Shenandoah [AMD64/ARM64]
 
 - [Java 8 Shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_shenandoah`
@@ -84,7 +96,7 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 - [Java 17 Shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/17)
   - `ghcr.io/software-noob/pterodactyl-images:java_17_shenandoah`
 
-#### Node.js [AMD64/ARM64]
+### Node.js [AMD64/ARM64]
 
 - [Nodejs 12](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/12)
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_12`
@@ -101,7 +113,7 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 - [Nodejs 19](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/19)
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_19`
 
-#### Python [AMD64/ARM64]
+### Python [AMD64/ARM64]
 
 - [Python 2.7](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/2.7)
   - `ghcr.io/software-noob/pterodactyl-images:python_2.7`
@@ -118,9 +130,9 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 - [Python 3.11](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.11)
   - `ghcr.io/software-noob/pterodactyl-images:python_3.11`
 
-### Game specific
+## Game specific
 
-#### Sourcemod [AMD64]
+### Sourcemod [AMD64]
 
 - [Source with sourcemod](https://github.com/Software-Noob/pterodactyl-images/tree/main/games/source-sourcemod)
   - `ghcr.io/software-noob/pterodactyl-images:games_source-sourcemod`
