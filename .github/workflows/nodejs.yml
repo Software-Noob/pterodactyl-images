@@ -12,7 +12,7 @@ on:
 
 permissions:
   actions: read
-  packages: read|write
+  packages: write
 
 concurrency:
   group: nodejs-${{ github.ref }}-1
