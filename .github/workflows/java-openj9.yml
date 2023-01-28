@@ -11,7 +11,7 @@ on:
 
 permissions:
   actions: read
-  packages: read|write
+  packages: write
 
 concurrency:
   group: java-openj9-${{ github.ref }}-1
