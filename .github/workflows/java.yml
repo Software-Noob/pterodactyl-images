@@ -10,6 +10,10 @@ on:
     paths:
       - java/**
 
+permissions:
+  actions: read
+  packages: read|write
+
 concurrency:
   group: java-${{ github.ref }}-1
   cancel-in-progress: true
@@ -45,7 +49,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.REGISTRY_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push image
         uses: docker/build-push-action@v3
