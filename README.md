@@ -91,7 +91,9 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 - [Java 18 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/18)
   - `ghcr.io/software-noob/pterodactyl-images:java_18_openj9`
 
-### Java Shenandoah [AMD64/ARM64]
+### Java Shenandoah Nightly [AMD64/ARM64]
+
+#### These are nightly builds. Shenandoah GC is by default shipped with Azul, Corretto and Temurin starting with Java 11
 
 - [Java 8 Shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_shenandoah`
