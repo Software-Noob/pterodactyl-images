@@ -51,6 +51,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_17_corretto`
 - [Java 19 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/19)
   - `ghcr.io/software-noob/pterodactyl-images:java_19_corretto`
+- [Java 20 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/20)
+  - `ghcr.io/software-noob/pterodactyl-images:java_20_corretto`
 
 ### Java Eclipse Temurin [AMD64/ARM64]
 
