@@ -71,6 +71,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 
 ### Java GraalVM [AMD64/ARM64]
 
+**NOTE**: Java 8 is AMD64 only due to lack of support from upstream
+
 - [Java 8 GraalVM-CE](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-graalvm/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_graalvm`
 - [Java 11 GraalVM JDK](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-graalvm/11)
@@ -93,7 +95,7 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 
 ### Java Shenandoah Nightly [AMD64/ARM64]
 
-#### These are nightly builds. Shenandoah GC is by default shipped with Azul, Corretto and Temurin starting with Java 11
+These are nightly builds. Shenandoah GC is by default shipped with Azul, Corretto and Temurin starting with Java 11
 
 - [Java 8 Shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_shenandoah`
@@ -136,7 +138,7 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 - [Python 3.11](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.11)
   - `ghcr.io/software-noob/pterodactyl-images:python_3.11`
 - [Python 3.12-rc](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.12-rc)
-  - `ghcr.io/software-noob/pterodactyl-images:python_3.12_rc`
+  - `ghcr.io/software-noob/pterodactyl-images:python_3.12-rc`
 
 ## Game specific
 
