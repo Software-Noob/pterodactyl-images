@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/container || (exit 1 && echo "Unable to change to /home/container. Something went real wrong.")
+cd /home/container || (echo "Unable to change to /home/container. Something went real wrong." && exit 1)
 
 # Configure colors
 CYAN='\033[0;36m'
