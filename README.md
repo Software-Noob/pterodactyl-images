@@ -19,6 +19,7 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 | [Java Eclipse Temurin](https://github.com/Software-Noob/pterodactyl-images#java-eclipse-temurin-amd64arm64) | AMD64, ARM64        |
 | [Java GraalVM](https://github.com/Software-Noob/pterodactyl-images#java-graalvm-amd64arm64)                 | AMD64, ARM64        |
 | [Java OpenJ9](https://github.com/Software-Noob/pterodactyl-images#java-openj9-amd64)                        | AMD64               |
+| [Java Dragonwell](https://github.com/Software-Noob/pterodactyl-images#java-dragonwell-amd64arm64)           | AMD64, ARM64        |
 | [Java Shenandoah](https://github.com/Software-Noob/pterodactyl-images#java-shenandoah-amd64arm64)           | AMD64, ARM64        |
 | [Node.js](https://github.com/Software-Noob/pterodactyl-images#nodejs-amd64arm64)                            | AMD64, ARM64        |
 | [Python](https://github.com/Software-Noob/pterodactyl-images#python-amd64arm64)                             | AMD64, ARM64        |
@@ -94,6 +95,16 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_17_openj9`
 - [Java 18 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/18)
   - `ghcr.io/software-noob/pterodactyl-images:java_18_openj9`
+
+### Java Dragonwell [AMD64/ARM64]
+
+- [Java 8 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/8)
+  - `ghcr.io/software-noob/pterodactyl-images:java_8_dragonwell`
+- [Java 11 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/11)
+  - `ghcr.io/software-noob/pterodactyl-images:java_11_dragonwell`
+- [Java 17 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/17)
+  - `ghcr.io/software-noob/pterodactyl-images:java_17_dragonwell`
+
 
 ### Java Shenandoah Nightly [AMD64/ARM64]
 
