@@ -25,7 +25,7 @@ export INTERNAL_IP
 ###################################################################################################################
 
 SOURCEMOD_LATEST="https://sourcemod.net/latest.php?os=linux&version=1.11"
-METAMOD_LATEST="https://sourcemm.net/latest.php?os=linux&version=1.11"
+METAMOD_LATEST="https://sourcemm.net/latest.php?os=linux&version=1.12"
 
 print() {
     echo -e "$1"
