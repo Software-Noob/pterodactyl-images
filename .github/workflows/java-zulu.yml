@@ -43,7 +43,6 @@ jobs:
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@v3
         with:
-          version: "v0.10.4"
           buildkitd-flags: --debug
 
       - name: Login to registry
