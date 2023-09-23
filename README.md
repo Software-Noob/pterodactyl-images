@@ -98,13 +98,12 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 
 ### Java Dragonwell [AMD64/ARM64]
 
-- [Java 8 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/8)
+- [Java 8 Dragonwell](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_dragonwell`
-- [Java 11 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/11)
+- [Java 11 Dragonwell](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/11)
   - `ghcr.io/software-noob/pterodactyl-images:java_11_dragonwell`
-- [Java 17 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/17)
+- [Java 17 Dragonwell](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/17)
   - `ghcr.io/software-noob/pterodactyl-images:java_17_dragonwell`
-
 
 ### Java Shenandoah Nightly [AMD64/ARM64]
 
