@@ -142,6 +142,10 @@ These are nightly builds. Shenandoah GC is by default shipped with Azul, Corrett
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_18`
 - [Nodejs 19](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/19)
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_19`
+- [Nodejs 20](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/20)
+  - `ghcr.io/software-noob/pterodactyl-images:nodejs_20`
+- [Nodejs 21](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/21)
+  - `ghcr.io/software-noob/pterodactyl-images:nodejs_21`
 
 ### Python [AMD64/ARM64]
 
