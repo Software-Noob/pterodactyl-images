@@ -25,7 +25,7 @@ export INTERNAL_IP
 ###################################################################################################################
 
 SOURCEMOD_LATEST="https://sourcemod.net/latest.php?os=linux&version=1.11"
-METAMOD_LATEST="https://sourcemm.net/latest.php?os=linux&version=1.12"
+METAMOD_LATEST="https://sourcemm.net/latest.php?os=linux&version=1.11"
 
 print() {
     echo -e "$1"
@@ -97,12 +97,12 @@ if [[ "${SOURCEMOD}" = 1 || "${SOURCEMOD}" == "true" ]]; then
     detect_install_path
     # Should custom versions be provided, check that they are valid. If not, use latest stable version.
     if [[ -n "${SM_VERSION}" ]]; then
-        SOURCEMOD_SCRAPE=$(curl https://sm.alliedmods.net/smdrop/${SM_VERSION}/sourcemod-latest-linux -sS)
+        SOURCEMOD_SCRAPE=$(curl https://sm.alliedmods.net/smdrop/"${SM_VERSION}"/sourcemod-latest-linux -sS)
         SOURCEMOD_URL="https://sm.alliedmods.net/smdrop/${SM_VERSION}/${SOURCEMOD_SCRAPE}"
 
         # scrape the latest version of metamod for the specified sourcemod version and set it as METAMOD_URL
         if [[ -n "${MM_VERSION}" ]]; then
-            METAMOD_SCRAPE=$(curl https://mms.alliedmods.net/mmsdrop/${MM_VERSION}/mmsource-latest-linux -sS)
+            METAMOD_SCRAPE=$(curl https://mms.alliedmods.net/mmsdrop/"${MM_VERSION}"/mmsource-latest-linux -sS)
             METAMOD_URL="https://mms.alliedmods.net/mmsdrop/${MM_VERSION}/${METAMOD_SCRAPE}"
         fi
     fi
