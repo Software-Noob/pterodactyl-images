@@ -41,6 +41,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_19_zulu`
 - [Java 20 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/20)
   - `ghcr.io/software-noob/pterodactyl-images:java_20_zulu`
+- [Java 21 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/21)
+  - `ghcr.io/software-noob/pterodactyl-images:java_21_zulu`
 
 ### Java Amazon Corretto [AMD64/ARM64]
 
@@ -54,6 +56,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_19_corretto`
 - [Java 20 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/20)
   - `ghcr.io/software-noob/pterodactyl-images:java_20_corretto`
+- [Java 21 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/21)
+  - `ghcr.io/software-noob/pterodactyl-images:java_21_corretto`
 
 ### Java Eclipse Temurin [AMD64/ARM64]
 
@@ -71,6 +75,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_19`
 - [Java 20](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/20)
   - `ghcr.io/software-noob/pterodactyl-images:java_20`
+- [Java 21](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/21)
+  - `ghcr.io/software-noob/pterodactyl-images:java_21`
 
 ### Java GraalVM [AMD64/ARM64]
 
@@ -82,6 +88,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_11_graalvm`
 - [Java 17 GraalVM JDK](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-graalvm/17)
   - `ghcr.io/software-noob/pterodactyl-images:java_17_graalvm`
+- [Java 21 GraalVM JDK](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-graalvm/21)
+  - `ghcr.io/software-noob/pterodactyl-images:java_21_graalvm`
 
 ### Java OpenJ9 [AMD64]
 
@@ -95,6 +103,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_17_openj9`
 - [Java 18 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/18)
   - `ghcr.io/software-noob/pterodactyl-images:java_18_openj9`
+- [Java 20 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/20)
+  - `ghcr.io/software-noob/pterodactyl-images:java_20_openj9`
 
 ### Java Dragonwell [AMD64/ARM64]
 
