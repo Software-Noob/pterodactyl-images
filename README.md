@@ -149,8 +149,10 @@ These are nightly builds. Shenandoah GC is by default shipped with Azul, Corrett
   - `ghcr.io/software-noob/pterodactyl-images:python_3.10`
 - [Python 3.11](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.11)
   - `ghcr.io/software-noob/pterodactyl-images:python_3.11`
-- [Python 3.12-rc](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.12-rc)
-  - `ghcr.io/software-noob/pterodactyl-images:python_3.12-rc`
+- [Python 3.12](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.12)
+  - `ghcr.io/software-noob/pterodactyl-images:python_3.12`
+- [Python 3.13-rc](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.13-rc)
+  - `ghcr.io/software-noob/pterodactyl-images:python_3.13-rc`
 
 ## Game specific
 
