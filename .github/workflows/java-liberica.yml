@@ -1,4 +1,4 @@
-name: build java
+name: build java_liberica
 
 on:
   workflow_dispatch:
