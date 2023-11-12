@@ -1,4 +1,4 @@
-name: build java_corretto
+name: build java
 
 on:
   workflow_dispatch:
@@ -8,19 +8,19 @@ on:
     branches:
       - main
     paths:
-      - java-corretto/**
+      - java-liberica/**
 
 permissions:
   actions: read
   packages: write
 
 concurrency:
-  group: java-corretto-${{ github.ref }}-1
+  group: java-liberica-${{ github.ref }}-1
   cancel-in-progress: true
 
 jobs:
-  build_and_push:
-    name: "java_${{ matrix.tag }}_corretto"
+  push:
+    name: "java_${{ matrix.tag }}_liberica"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -29,8 +29,6 @@ jobs:
           - 8
           - 11
           - 17
-          - 19
-          - 20
           - 21
     steps:
       - name: Git checkout for Github repository workspace
@@ -54,9 +52,9 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v5
         with:
-          context: ./java-corretto
-          file: ./java-corretto/${{ matrix.tag }}/Dockerfile
-          platforms: linux/amd64,linux/arm64
+          context: ./java-liberica
+          file: ./java-liberica/${{ matrix.tag }}/Dockerfile
+          platforms: linux/amd64, linux/arm64
           push: true
           tags: |
-            ghcr.io/software-noob/pterodactyl-images:java_${{ matrix.tag }}_corretto
+            ghcr.io/software-noob/pterodactyl-images:java_${{ matrix.tag }}_liberica
