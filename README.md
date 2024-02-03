@@ -126,6 +126,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_18_openj9`
 - [Java 20 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/20)
   - `ghcr.io/software-noob/pterodactyl-images:java_20_openj9`
+- [Java 21 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/21)
+  - `ghcr.io/software-noob/pterodactyl-images:java_21_openj9`
 
 ### Java Shenandoah Nightly [AMD64/ARM64]
 
