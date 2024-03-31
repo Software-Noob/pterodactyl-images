@@ -68,6 +68,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_11_dragonwell`
 - [Java 17 Dragonwell](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/17)
   - `ghcr.io/software-noob/pterodactyl-images:java_17_dragonwell`
+- [Java 21 Dragonwell](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-dragonwell/21)
+  - `ghcr.io/software-noob/pterodactyl-images:java_21_dragonwell`
 
 ### Java Eclipse Temurin [AMD64/ARM64]
 
