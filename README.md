@@ -1,6 +1,6 @@
 # Pterodactyl/WISP Docker Images
 
-Docker images that can be used with the Pterodactyl/WISP Game Panel. You can request more images by opening a new issue. These are mostly created for myself.
+Docker images that can be used with the Pelican/Pterodactyl/WISP Game Panel. You can request more images by opening a new issue. These are mostly created for myself.
 
 Additional Pterodactyl images can be found at [Parkervcp](https://github.com/parkervcp/images), [Matthewpi](https://github.com/matthewpi/images) and [Yolks](https://github.com/pterodactyl/yolks) repositories.
 
@@ -59,6 +59,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_20_zulu`
 - [Java 21 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/21)
   - `ghcr.io/software-noob/pterodactyl-images:java_21_zulu`
+- [Java 22 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/22)
+  - `ghcr.io/software-noob/pterodactyl-images:java_22_zulu`
 
 ### Java Dragonwell [AMD64/ARM64]
 
