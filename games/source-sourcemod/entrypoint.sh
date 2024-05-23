@@ -62,7 +62,7 @@ download_default_stable() {
 INSTALL_PATH="${INSTALL_PATH:-csgo}"
 
 detect_install_path() {
-    SUPPORTED_GAMES=("csgo" "tf" "css" "dod" "cstrike" "left4dead" "leftdead2" "contagion" "alienswarm" "orangebox" "orangebox_valve" "sdk2013" "original" "darkmessiah" "bloodygoodtime" "eye" "blade" "insurgency" "pvkii" "mcv" "hl2mp" "ship")
+    SUPPORTED_GAMES=("csgo" "tf" "css" "dod" "cstrike" "left4dead" "left4dead2" "contagion" "alienswarm" "orangebox" "orangebox_valve" "sdk2013" "original" "darkmessiah" "bloodygoodtime" "eye" "blade" "insurgency" "pvkii" "mcv" "hl2mp" "ship")
 
     for i in "${SUPPORTED_GAMES[@]}"; do
         if [[ -d /home/container/"${i}" ]]; then
