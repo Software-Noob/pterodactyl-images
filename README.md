@@ -106,6 +106,8 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_17_graalvm`
 - [Java 21 GraalVM JDK](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-graalvm/21)
   - `ghcr.io/software-noob/pterodactyl-images:java_21_graalvm`
+- [Java 22 GraalVM JDK](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-graalvm/22)
+  - `ghcr.io/software-noob/pterodactyl-images:java_22_graalvm`
 
 ### Java Liberica [AMD64/ARM64]
 
