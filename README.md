@@ -122,7 +122,7 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 - [Java 22 Liberica](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-liberica/22)
   - `ghcr.io/software-noob/pterodactyl-images:java_22_liberica`
 
-### Java OpenJ9 [AMD64]
+### Java OpenJ9 [AMD64/ARM64]
 
 - [Java 8 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_openj9`

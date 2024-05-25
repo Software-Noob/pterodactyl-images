@@ -37,6 +37,6 @@ jobs:
         uses: ./.github/workflows/build-docker-image.yml
         with:
           context: ./java-openj9
-          platforms: linux/amd64
+          platforms: linux/amd64,linux/arm64
           file: ./java-openj9/${{ matrix.tag }}/Dockerfile
           tags: ghcr.io/software-noob/pterodactyl-images:java_${{ matrix.tag }}_openj9
