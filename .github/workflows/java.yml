@@ -37,7 +37,7 @@ jobs:
 
     steps:
       - name: Call reusable build image workflow
-        uses: ./.github/workflows/build-docker-image.yml
+        uses: ./.github/actions/build-docker-image.yml
         with:
           context: ./java
           platforms: linux/amd64,linux/arm64
