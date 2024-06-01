@@ -33,10 +33,26 @@ jobs:
           - 20
           - 21
     steps:
-      - name: Call reusable build image workflow
-        uses: ./.github/workflows/build-docker-image.yml
+      - name: Git checkout for Github repository workspace
+        uses: actions/checkout@v4
+
+      - name: Setup Docker buildx
+        uses: docker/setup-buildx-action@v3
+        with:
+          buildkitd-flags: --debug
+
+      - name: Login to registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v5
         with:
           context: ./java-openj9
           platforms: linux/amd64,linux/arm64
           file: ./java-openj9/${{ matrix.tag }}/Dockerfile
+          push: true
           tags: ghcr.io/software-noob/pterodactyl-images:java_${{ matrix.tag }}_openj9
