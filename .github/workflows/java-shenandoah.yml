@@ -1,4 +1,4 @@
-name: build java_shenandoah
+name: build java_shenandoah (shipilev openjdk)
 
 on:
   workflow_dispatch:
@@ -29,6 +29,7 @@ jobs:
           - 8
           - 11
           - 17
+          - 21
     steps:
       - name: Git checkout for Github repository workspace
         uses: actions/checkout@v4

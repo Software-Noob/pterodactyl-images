@@ -1,4 +1,4 @@
-FROM        shipilev/openjdk:8
+FROM        shipilev/openjdk:21
 
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 LABEL       org.opencontainers.image.source="https://github.com/Software-Noob/pterodactyl-images"
